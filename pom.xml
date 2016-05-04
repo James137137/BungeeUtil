@@ -44,6 +44,13 @@
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
             <version>3.20.0-GA</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <artifactId>bungeecord-proxy</artifactId>
+            <groupId>net.md-5</groupId>
+            <version>1.9-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
     </dependencies>
 </project>
