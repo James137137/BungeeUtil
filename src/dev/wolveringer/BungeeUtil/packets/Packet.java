@@ -27,15 +27,15 @@ public abstract class Packet {
 	}
 	
 	static {
-		registerPacket(Protocol.LOGIN, Direction.TO_CLIENT, 0x00,0x00, PacketLoginDisconnect.class);
+		//registerPacket(Protocol.LOGIN, Direction.TO_CLIENT, 0x00,0x00, PacketLoginDisconnect.class);
 		
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x02,0x0F, PacketPlayOutChat.class); //->0x0F
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x47,0x48, PacketPlayOutPlayerListHeaderFooter.class);//->0x48
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x47,0x48, PacketPlayOutPlayerListHeaderFooter.class);//->0x48
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x08,0x2E, PacketPlayOutPosition.class); //Changed -> 0x2E
 		
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x18,0x4A, PacketPlayOutEntityTeleport.class); //Changed -> 0x2E
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x18,0x4A, PacketPlayOutEntityTeleport.class); //Changed -> 0x2E
 		
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x19,0x34, PacketPlayOutEntityHeadRotation.class);
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x19,0x34, PacketPlayOutEntityHeadRotation.class);
 		
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x32,0x11, PacketPlayOutTransaction.class); //-> 0x11
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x2E,0x12, PacketPlayOutCloseWindow.class); //-> 0x12
@@ -48,14 +48,14 @@ public abstract class Packet {
 		
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x04,0x3C, PacketPlayOutEntityEquipment.class); //Chaned
 		
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x2A,0x22, PacketPlayOutWorldParticles.class);
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x2A,0x22, PacketPlayOutWorldParticles.class);
 		
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x40,0x1A, PacketPlayOutDisconnect.class); //0x1A
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x40,0x1A, PacketPlayOutDisconnect.class); //0x1A
 		
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x3E,0x41, PacketPlayOutScoreboardTeam.class); //-> 0x41
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x3D,0x38, PacketPlayOutScoreboardDisplayObjective.class);//-> 0x38
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x3B,0x3F, PacketPlayOutScoreboardObjective.class); //-> 0x3F
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x3C,0x42, PacketPlayOutScoreboardScore.class); //-> 0x42
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x3E,0x41, PacketPlayOutScoreboardTeam.class); //-> 0x41
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x3D,0x38, PacketPlayOutScoreboardDisplayObjective.class);//-> 0x38
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x3B,0x3F, PacketPlayOutScoreboardObjective.class); //-> 0x3F
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x3C,0x42, PacketPlayOutScoreboardScore.class); //-> 0x42
 		
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x37,0x07, PacketPlayOutStatistic.class); //-> 0x07
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x13,0x30, PacketPlayOutEntityDestroy.class);//-> 0x30
@@ -68,16 +68,16 @@ public abstract class Packet {
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x09,0x37, PacketPlayOutHeldItemSlot.class);//-> 0x37
 		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x33, 0x46, PacketPlayOutUpdateSign.class);
 		
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, null,0x0C, PacketPlayOutBossBar.class); //Only 1.9 :) Best Bar-Update Ever!
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, null,0x0C, PacketPlayOutBossBar.class); //Only 1.9 :) Best Bar-Update Ever!
 		
 		//TODO Make it working! registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x0E, PacketPlayOutEntityAbstract.class);//Delete dont needed?
 		//TODO Make it working! registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x0F, PacketPlayOutEntityAbstract.class);//Delete dont needed?
 		//TODO Make it working! registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x10, PacketPlayOutEntityAbstract.class);//Delete dont needed?
 		//TODO Make it working! registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x11, PacketPlayOutEntityAbstract.class);//Delete dont needed?
 		
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x29,0x19, PacketPlayOutNamedSoundEffect.class); //Changed
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x29,0x19, PacketPlayOutNamedSoundEffect.class); //Changed
 		
-		registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x0C,0x05, PacketPlayOutNamedEntitySpawn.class);
+		//registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x0C,0x05, PacketPlayOutNamedEntitySpawn.class);
 		// registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x21, PacketPlayOutMapChunk.class); //TODO Chunk Serelizer (Premium bungee src)
 		// registerPacket(Protocol.GAME, Direction.TO_CLIENT, 0x26, PacketPlayOutMapChunkBulk.class); //TODO Chunk Serelizer (Premium bungee src)
 		
